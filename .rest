@@ -1,0 +1,6 @@
+//GET https://googleapis.com/customsearch/v1?key=AIzaSyDtLM7jPXriMs_zcIIJVR0bpQ94pFNZN6w&cx=9738006d73a454eb9
+
+GET https://www.googleapis.com/customsearch/v1?key=AIzaSyDtLM7jPXriMs_zcIIJVR0bpQ94pFNZN6w&cx=9738006d73a454eb9&q=lectures
+
+
+//get https://www.googleapis.com/customsearch/v1?key=AIzaSyDtLM7jPXriMs_zcIIJVR0bpQ94pFNZN6w&cx=9738006d73a454eb9:omuauf_lfve&q=java

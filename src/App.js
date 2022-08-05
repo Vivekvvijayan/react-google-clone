@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./pages/Home/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import "./App.css"
+import Result from "./pages/Result/Result";
+import { useEffect,useContext } from 'react'
+import { AuthContext } from "./Authcontext";
+
 
 function App() {
+
+  const {setAuth,setUser } = useContext(AuthContext)
+  useEffect(() =>{
+    const token = JSON.parse(localStorage.getItem('token'))
+
+    if(token){
+      setAuth(true)
+      console.log(typeof(token))
+      setUser(token)
+    }else{
+      setAuth(false)
+      setUser({})
+    }
+  },[]);
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+         <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/result" element={<Result />} />
+        </Routes>
+    
+  
+    </BrowserRouter>
   );
 }
 
