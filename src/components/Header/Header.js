@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { useContext } from "react"
 import { AuthContext } from "../../Authcontext"
-// import { useGoogleLogin } from '@react-oauth/google';
+
 import GoogleLogin from "react-google-login";
 import { CLIENT_ID } from "../../credintials";
 import Profile from "../Profile/Profile";
@@ -48,7 +48,7 @@ function Header() {
             onFailure={data => {
               console.log('failed login')
             }}
-            cookiePolicy={'single_host_origin'}
+           
             
            
 
