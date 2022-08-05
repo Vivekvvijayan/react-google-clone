@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { SearchContext } from '../../serachContext'
+import { SearchContext } from '../../Context/serachContext'
 import { useNavigate } from 'react-router-dom'
 import SearchInput from '../SarchInput/SearchInput'
 

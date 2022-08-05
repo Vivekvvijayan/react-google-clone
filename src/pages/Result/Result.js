@@ -3,11 +3,11 @@ import Element from "../../components/Element/Element"
 import { useLocation } from 'react-router-dom'
 import { useEffect, useContext } from "react"
 import { instance } from '../../axios'
-import { SearchContext } from "../../serachContext"
+import { SearchContext } from "../../Context/serachContext"
 import { CX, KEY } from "../../credintials"
 import SearchInput from "../../components/SarchInput/SearchInput"
 import Profile from "../../components/Profile/Profile"
-import { AuthContext } from "../../Authcontext"
+import { AuthContext } from "../../Context/Authcontext"
 
 function Result() {
 

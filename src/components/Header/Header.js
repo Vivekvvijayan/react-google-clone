@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { useContext } from "react"
-import { AuthContext } from "../../Authcontext"
+import { AuthContext } from "../../Context/Authcontext"
 
 import GoogleLogin from "react-google-login";
 import { CLIENT_ID } from "../../credintials";

@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import Context from './Authcontext';
+import Context from './Context/Authcontext';
 import { GoogleOAuthProvider } from '@react-oauth/google'
 import { CLIENT_ID } from './credintials'
-import SearchContextComponenet from './serachContext';
+import SearchContextComponenet from './Context/serachContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

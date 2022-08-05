@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import "./App.css"
 import Result from "./pages/Result/Result";
 import { useEffect,useContext } from 'react'
-import { AuthContext } from "./Authcontext";
+import { AuthContext } from "./Context/Authcontext";
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       setAuth(false)
       setUser({})
     }
-  },[]);
+  },[setUser,setAuth]);
  
   return (
     <BrowserRouter>
