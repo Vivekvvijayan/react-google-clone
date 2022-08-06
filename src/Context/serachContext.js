@@ -9,6 +9,7 @@ const SearchContextComponenet = ({children}) => {
     const [searchTime,setSearchTime] = useState('')
     const [total,setTotal] = useState({})
 
+
     
     return(
 

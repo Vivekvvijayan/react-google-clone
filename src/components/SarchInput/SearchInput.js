@@ -1,5 +1,10 @@
 
-function SearchInput({ setSearchInput,val }) {
+import { useContext } from "react"
+import { SearchContext } from "../../Context/serachContext"
+function SearchInput() {
+
+        const {val,setVal} = useContext(SearchContext)
+
     return (
         <>
             <div className=" w-full h-12 px-4 bg-[#e7eef4] flex justify-space-between items-center space-x-3   rounded-full lg:w-2/5 lg:h-14 lg:p-4 md:w-4/5">
@@ -9,8 +14,10 @@ function SearchInput({ setSearchInput,val }) {
                     type="text"
                     className="w-full w-full outline-none bg-transparent "
                     placeholder="Search"
-                    onChange={setSearchInput ? setSearchInput:null}
+                    
+                    onChange={(e) => setVal(e.target.value)}
                     value={ val  }
+                    
 
                 />
 
